@@ -45,6 +45,8 @@ public class AccountController {
     @RequestMapping("/del")
     public String del(int id){
 
+        System.out.println("修改一下代码");
+
         accountService.deleteById(id);
 
         return "forward:/account/list.do";
